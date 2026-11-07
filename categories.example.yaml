@@ -1,0 +1,53 @@
+# Copy this file to categories.yaml and customize it locally.
+# categories.yaml is ignored because it may contain personal addresses and private links.
+
+lookback_days: 7
+suggest_after: 3
+full_detail_limit: 100
+
+follow_links:
+  per_email: 2
+  per_run: 15
+  allowed_domains:
+    - example.org
+    - docs.google.com
+    - drive.google.com
+
+digest_doc: ""
+
+categories:
+  - name: People
+    description: Messages from friends, family, and colleagues.
+    detail: full
+
+  - name: School
+    description: Messages from schools, teachers, and education organizations.
+    detail: full
+    subgroups:
+      - name: Example school
+        description: Messages from the example school and its programs.
+        senders:
+          - "@school.example"
+          - teacher@school.example
+
+  - name: Kids' activities
+    description: Classes, teams, camps, lessons, and performances.
+    detail: full
+    subgroups:
+      - name: Example activity
+        description: Messages from an example activity provider.
+        senders:
+          - "@activity.example"
+          - noreply@registration.example
+
+  - name: Finance & receipts
+    description: Bills, statements, receipts, and payment notices.
+    detail: brief
+
+  - name: Notifications
+    description: Automated alerts from services and apps.
+    detail: brief
+
+  - name: Newsletters & promotions
+    description: Mailing lists, newsletters, and promotional email.
+    detail: brief

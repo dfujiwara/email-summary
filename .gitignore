@@ -1,0 +1,4 @@
+.DS_Store
+
+# Local inbox configuration may contain personal addresses and private document links.
+/categories.yaml
